@@ -246,7 +246,7 @@ app.layout = html.Div(children=[
     html.H1(id='title', children='{} Swells - Buoy {}'.format(buoyLocations[buoy], buoy)),
 
     html.Div(id='subtitle', children='''
-        Last update from buoy: {}:{} {} PST {}}
+        Last update from buoy: {}:{} {} PST on {}
     '''.format(updateHour,updateMinute,updateAMPM,updateDay)),
     
     html.Div(children =[
@@ -337,7 +337,7 @@ def update_output_div(input_value):
         )
     )
     
-    return html.H1(id='title', children='{} Swells - Buoy {}'.format(buoyLocations[input_value], input_value)), html.Div(id='time', children='''Last update from buoy: {}:{} {} PST {}'''.format(updateHour,updateMinute,updateAMPM,updateDay)), fig
+    return html.H1(id='title', children='{} Swells - Buoy {}'.format(buoyLocations[input_value], input_value)), html.Div(id='time', children='''Last update from buoy: {}:{} {} PST on {}'''.format(updateHour,updateMinute,updateAMPM,updateDay)), fig
              
 
 
